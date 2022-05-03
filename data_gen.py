@@ -2502,13 +2502,29 @@ random_samples={
                 "Ivy Tech Community College System",
                 "Manchester University",
                 "Marian University"],
-    "interest": ["Sports", "Fashion","Fitness","Gaming","Reading","Nature","Cooking", "Travel"]
+    "interest": ["Sports", "Fashion","Fitness","Gaming","Reading","Nature","Cooking", "Travel", "Art", "Music"]
     
 }
 
 def email_gen(fname, lname):
     unique=fname[0].lower()+lname.lower()
     return unique+"@gmail.com"
+def politics():
+    num=round(random.uniform(-1,1),2)
+    if num>0:
+        if num>0.7:
+            return "Far Right (" + str(num) + ")"
+        elif num>0.3:
+            return "Right (" + str(num) + ")"
+        else: 
+            return "Right Leaning (" + str(num) + ")"
+    else:
+        if num<-0.7:
+            return "Far Left (" + str(num) + ")"
+        elif num<-0.3: 
+            return "Left (" + str(num) + ")"
+        else:
+            return "Left Leaning (" + str(num) + ")"
 def gen_random_person_txt(f):
     last_name=random_samples['lname'][random.randrange(499)]
     first_name=random_samples['fname'][random.randrange(499)]
@@ -2533,7 +2549,8 @@ def gen_random_person_txt(f):
     loc=random.randrange(0,499)
     f.write(random_samples['college'][loc]+"\n")
     f.write(random_samples['zips'][loc]+"\n")
-    f.write(random_samples["interest"][random.randrange(7)]+"\n")
+    f.write(random_samples["interest"][random.randrange(9)]+"\n")
+    f.write(politics()+"\n")
     f.write("------------------------------\n")
 
 print("Enter the number of random people to generate: ")
