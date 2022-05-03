@@ -1,0 +1,32 @@
+One, Test
+1/1/2000
+(Home) test@gmail.com
+(Work) 1111111111
+21
+University of Southern California
+90007
+------------------------------
+Someone, Similar
+2/2/2000
+(Work) close@gmail.com
+(Personal) 2222222222
+21
+University of California Los Angeles
+90007
+------------------------------
+Less, Similar
+3/3/2007
+(Home) less@gmail.com
+(HOme) 3333333333
+12
+Palm Harbor High School
+34683
+------------------------------
+Friend of, Third Guy
+4/4/2007
+(HOme) lol@gmail.com
+(Personal) 4444444444
+13
+Yorba Linda High School
+34689
+------------------------------
